@@ -19,4 +19,4 @@
    =======
    Any 3 digit number
 
-3. For further reference we must save the response and charge id in our database.
+3. For further reference, we must save the response and charge id in our database.
