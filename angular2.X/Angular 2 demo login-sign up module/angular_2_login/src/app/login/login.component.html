@@ -1,0 +1,187 @@
+<!--<div class="http-loader">
+  <div class="loading loading--double"></div>
+</div>-->
+<div class="login-loader-container">
+  <div class="loader-spin">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+
+            </div>
+</div>
+<div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+</div>
+<svg version="1.1" id="triagnleSvg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+<clipPath id="polygon-clip-hexagon" clipPathUnits="objectBoundingBox">
+  <polygon  points="0 0,1 1,-1 1,0 "/>
+</clipPath>
+<clipPath id="polygon-clip-two" clipPathUnits="objectBoundingBox">
+  <polygon points="0 0,9 -1,10 10,1"/>
+</clipPath>
+<!-- Top -->
+<rect class="shape-top" clip-path="url(#polygon-clip-hexagon)" preserveAspectRatio="none" width="100%" height="100%" xlink:href="" style="fill: #1b9d62"/>
+<!-- Bottom -->
+<rect class="shape-bottom" clip-path="url(#polygon-clip-two)" preserveAspectRatio="none" width="100%" height="100%" xlink:href="" style="fill: #54a2d6"/>
+</svg>
+<div class="login-wrapper">
+    <div class="login-container">
+        <div class="container logo-box">
+            <p>
+                <a href="javascript:void(0)"><img src="./assets/images/logo.png" alt="" title="Image App"></a>
+            </p>
+        </div>
+       
+        <!--========= Login Input =========-->
+        <div class="container">
+            <div class="login-box-inn">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 login-left">
+                        <!-- Login Form -->
+                        <div class="login-left-inn" *ngIf="showLogin">
+                            <h2>login</h2>
+                            <form role="form" [formGroup]="loginForm" (ngSubmit)="login($event, email_id.value, password.value)" class="login-form" id="logInForm">
+                                <div class="login-error-mgs"> {{error}}</div>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-user" aria-hidden="true"></i></span>
+                                            <input #email_id formControlName="email_id" id="email_id" type="text" name="email_id" ng-Model="email_id" placeholder="Email ID" class="form-control" />
+                                        </div>
+                                        <div class="required-field-text">
+                                            <control-messages [control]="loginForm.controls.email_id"></control-messages>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-lock" aria-hidden="true"></i> </span>
+                                            <input #password formControlName="password" id="password" type="password" name="password" ng-Model="password" class="form-control" placeholder="Password" />
+                                        </div>
+                                        <div class="required-field-text">
+                                            <control-messages [control]="loginForm.controls.password"></control-messages>
+                                        </div>
+                                    </div>
+                                    <div class="form-group remember-forget">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="checkbox">
+                                                    <label class="control control--checkbox">
+                          Remember Me
+                          <input type="checkbox">
+                          <div class="control__indicator"></div>
+                          </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <p><a href="javascript:void(0);" (click)="showTab('forgotPassword')">Forgot Password</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-block login-btn" type="submit" [disabled]="!loginForm.valid">Login</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <!-- Login Form -->
+
+                        <!-- Sign Up Form -->
+                        <div class="login-left-inn" *ngIf="showSignUp">
+                            <h2>Signup</h2>
+                            <form role="form" [formGroup]="signupForm" (ngSubmit)="signup($event, name.value, email_id.value, confirm_email_id.value, password.value)" class="login-form" id="signUpForm">
+                                <div class="login-success-mgs">{{success}}</div>
+                                <div class="login-error-mgs">{{error}}</div>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-user" aria-hidden="true"></i></span>
+                                            <input #name formControlName="name" id="name" type="text" name="name" ng-Model="name" class="form-control" placeholder="Full Name" />
+                                        </div>
+                                        <div class="required-field-text">
+                                            <control-messages [control]="signupForm.controls.name"></control-messages>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                            <input #email_id formControlName="email_id" id="email_id" type="text" name="email_id" class="form-control" ng-Model="email_id" placeholder="Email ID" />
+                                        </div>
+                                        <div class="required-field-text">
+                                            <control-messages [control]="signupForm.controls.email_id"></control-messages>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                            <input #confirm_email_id formControlName="confirm_email_id" id="confirm_email_id" type="text" name="confirm_email_id" ng-Model="confirm_email_id" class="form-control" placeholder="Confirm Email ID" />
+                                        </div>
+                                        <div class="required-field-text">
+                                            <control-messages [control]="signupForm.controls.confirm_email_id"></control-messages>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-lock" aria-hidden="true"></i> </span>
+                                            <input #password formControlName="password" id="password" type="password" name="password" ng-Model="password" class="form-control" placeholder="Password" />
+                                        </div>
+                                        <div class="required-field-text">
+                                            <control-messages [control]="signupForm.controls.password"></control-messages>
+                                        </div>
+                                    </div>
+                                    <div class="form-group remember-forget">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <p><a href="javascript:void(0);" (click)="showTab('forgotPassword')">Forgot Password</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-block login-btn" type="submit" [disabled]="!signupForm.valid">Sign Up</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <!-- Sign Up Form -->
+
+                        <!-- Forgot Password Form -->
+                        <div class="login-left-inn" *ngIf="forgotPassword">
+                            <h2>Forgot Password</h2>
+                            <form role="form" [formGroup]="forgotpasswordForm" (ngSubmit)="forgotpassword($event, email_id.value)" class="login-form" id="forgotPasswordForm">
+                                <div class="login-success-mgs">{{success}}</div>
+                                <div class="login-error-mgs">{{error}}</div>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-user" aria-hidden="true"></i></span>
+                                            <input #email_id formControlName="email_id" id="email_id" type="text" name="email_id" ng-Model="email_id" placeholder="Email ID" class="form-control" />
+                                        </div>
+                                        <div class="required-field-text">
+                                            <control-messages [control]="forgotpasswordForm.controls.email_id"></control-messages>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-block login-btn" type="submit" [disabled]="!forgotpasswordForm.valid">Submit</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-block cancel-btn" (click)="showTab('showLogin')">Cancel</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <!-- Forgot Password Form -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 login-right">
+                        <div class="login-right-inn">
+                            <h2>Use other account</h2>
+                            <p>you can also sign in using your facebook account or google account</p>
+                            <div class="social-box"> <a href="javascript:void(0)" class="to-facebook" (click)="socialSignIn('facebook')"><i class="fa fa-facebook" aria-hidden="true"></i> Sign Up Facebook</a>
+                                <a href="javascript:void(0)" class="to-google" (click)="socialSignIn('google')"><i class="fa fa-google-plus" aria-hidden="true"></i>Sign Up Google</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="shadow-container"><img src="./assets/images/shadow-bottom.png" alt=""></div>
+            </div>
+            <div *ngIf="showSignUp" class="signup-box"><a href="javascript:void(0);" class="btn btn-signup" (click)="showTab('showLogin')">Log In<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+            <div *ngIf="showLogin" class="signup-box"><a href="javascript:void(0);" class="btn btn-signup" (click)="showTab('showSignUp')">Sign Up<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+</div>

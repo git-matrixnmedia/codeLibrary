@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Angular CKeditor</title>
+<script src="../angular.min.js"></script>
+<script src="../ckeditor/ckeditor.js"></script>
+<script src="../ckeditor/angular-ckeditor.js"></script>
+<script type="text/javascript">
+	var app = angular.module("editor-app", ['ckeditor']);
+	app.controller('CkeditorCtroller', ['$scope', function ($scope) {
+		$scope.options = {language: 'en',allowedContent: true,entities: false };
+		$scope.submitEditorText = function(){
+			alert($scope.content);
+		}
+	}]);
+</script>
+</head>
+<body data-ng-app="editor-app">	
+
+<div data-ng-controller="CkeditorCtroller">
+	<div ckeditor="options" ng-model="content" ></div>
+	<button ng-click="submitEditorText()">Submit</button>
+</div>
+
+</body>
+</html>

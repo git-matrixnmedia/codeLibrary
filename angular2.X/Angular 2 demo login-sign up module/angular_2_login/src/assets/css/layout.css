@@ -1,0 +1,601 @@
+/*====================================================================================
+ ----------------------------------- Global Styles -----------------------------------
+====================================================================================*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #878285;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+a,
+a:link {
+    text-decoration: none;
+    outline: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    color: #1993CC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.header-area {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+
+/*====================================================================================
+----------------------------------- Common Classes -----------------------------------
+====================================================================================*/
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-35 {
+    margin-bottom: 35px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.margin-bottom-45 {
+    margin-bottom: 45px;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+.margin-bottom-60 {
+    margin-bottom: 60px;
+}
+
+.margin-bottom-70 {
+    margin-bottom: 70px;
+}
+
+.margin-bottom-80 {
+    margin-bottom: 80px;
+}
+
+.margin-bottom-90 {
+    margin-bottom: 90px;
+}
+
+.margin-bottom-100 {
+    margin-bottom: 100px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-35 {
+    margin-top: 35px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-top-45 {
+    margin-top: 45px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-top-70 {
+    margin-top: 70px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
+}
+
+.margin-top-90 {
+    margin-top: 90px;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+
+/*====================================================================================
+ ----------------------------------- Loader Styles -----------------------------------
+====================================================================================*/
+
+.loader {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.loader img {
+    width: inherit;
+    height: inherit;
+}
+
+
+/*====================================================================================
+ --------------------------------- Copy Right Styles ---------------------------------
+====================================================================================*/
+
+.copy-right {
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #4a71aa;
+    border-top: 1px solid #b8c5d8;
+    padding: 38px 2px;
+    background-color: #fff;
+}
+
+.copy-right a {
+    color: #4a71aa;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+
+/*====================================================================================
+ ----------------------------- All Layout Box Size Styles ----------------------------
+====================================================================================*/
+
+
+/* --- temp attribute ----*/
+
+#html-content-holder {
+    margin: auto;
+    position: relative;
+}
+
+.edit-box-inn {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+}
+
+.email-box-size {
+    width: 650px;
+    height: 400px;
+}
+
+.facebook-box-size {
+    width: 940px;
+    height: 788px;
+}
+
+.twitter-box-size {
+    width: 1024px;
+    height: 512px;
+}
+
+.linkedin-box-size {
+    width: 800px;
+    height: 800px;
+}
+
+.instragram-box-size {
+    width: 1080px;
+    height: 1080px;
+}
+
+.pinterest-box-size {
+    width: 735px;
+    height: 1102px;
+}
+
+.a5-box-size {
+    width: 1748px;
+    height: 2480px;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+
+/*====================================================================================
+ ----------------------- Left Side Bar + Right Container Style -----------------------
+====================================================================================*/
+
+.sidebar {
+    background-color: transparent;
+    bottom: 0;
+    display: block;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 155px;
+    z-index: 99;
+    text-align: center;
+    width: 260px;
+}
+
+.right-container {
+    margin-top: 155px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    width: calc(100% - 260px);
+    float: right;
+}
+
+
+/*====================================================================================
+ ------------------------------------ Font Style -------------------------------------
+====================================================================================*/
+
+.font-arial {}
+
+.font-georgia {}
+
+.font-tahoma {}
+
+.font-opensans {}
+
+
+/*====================================================================================
+------------------------------------- Footer CSS  ------------------------------------ 
+====================================================================================*/
+
+.checkout-footer {
+    background: #3b933f;
+    padding: 25px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*============================================= Extra Style =========================================*/
+
+.temp-view-imgbox1 canvas {
+    position: absolute;
+}
+
+.artwork-container .title-search-bar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 21px 0px 0px;
+}
+
+.artwork-container .title-search-bar .search-right {
+    padding-right: 0px;
+}
+
+.ver-scroll {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ver-scroll ul.imagelist.upimage-list {
+    height: 56vh;
+    margin-right: -18px;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.ver-scroll ul.imagelist {
+    height: 45vh;
+    margin-right: -18px;
+    max-height: 80vh;
+    overflow-y: scroll;
+    background-color: rgba(239, 239, 239, 1);
+}
+
+.ui-wrapper {
+    overflow: visible !important;
+}
+
+.edtitableContent[contenteditable="true"] {
+    cursor: move;
+}
+
+.newdesign-tempgrid li.show {
+    display: inline-block !important;
+}
+
+
+/*==================================== Loader Spin ====================================*/
+
+.loader-container-banner {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+.loader-container-banner.loaded {
+    display: none;
+}
+
+.loader-spin {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 1;
+    z-index: 1;
+}
+
+.spinner {
+    margin: auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: #388e3c;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+
+/*============================================= media query =========================================*/
+
+
+/*@media (min-width:1281px) and (max-width:1400px){
+.ver-scroll ul.imagelist.upimage-list {
+    height: 56vh;
+}
+.ver-scroll ul.imagelist {
+    height: 45vh;
+}
+}*/
+
+@media (min-width:1401px) and (max-width:1679px) {
+    .ver-scroll ul.imagelist.upimage-list {
+        height: 66vh;
+    }
+    .ver-scroll ul.imagelist {
+        height: 58vh;
+    }
+}
+
+@media (min-width:1680px) {
+    .ver-scroll ul.imagelist.upimage-list {
+        height: 70vh;
+    }
+    .ver-scroll ul.imagelist {
+        height: 62vh;
+    }
+}
+
+@media (min-width:1200px) {}
+
+@media (min-width:992px) {
+    .header-area .logo {
+        padding-left: 34px;
+    }
+    .header-area .nav-image-app {
+        padding-right: 34px;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    .header-area .cms-header .logo {
+        padding-left: 0px;
+    }
+    .header-area .cms-header .nav-image-app {
+        padding-right: 0px;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    .nav-image-app li {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+@media (min-width:768px) {}
+
+@media (max-width:767px) {}
+
+@media (max-width:991px) {}
+
+@media (max-width:1199px) {}
+
+@media (min-width:768px) and (max-width:991px) {
+    .header-area .logo {
+        padding-left: 15px;
+    }
+    .header-area .nav-image-app {
+        padding-right: 15px;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    .header-area .cms-header .logo {
+        padding-left: 0px;
+    }
+    .header-area .cms-header .nav-image-app {
+        padding-right: 0px;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    .nav-image-app li {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .sidebar {
+        width: 160px;
+    }
+    .right-container {
+        width: calc(100% - 160px);
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .sidebar {
+        width: 200px;
+    }
+    .right-container {
+        width: calc(100% - 200px);
+    }
+}

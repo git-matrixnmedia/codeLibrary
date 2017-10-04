@@ -1,0 +1,49 @@
+/*============================== Responsive CSS Sprite Image ==============================*/
+
+.email, .fb, .twt, .linkedin, .instagram, .pinterest, .print, .secure-payments, .dn-arrow-oval, .bg-color, .download, .print-green, .repositor, .artwork, .share, .choose-plan-left, .choose-plan-right, .filters-icon, .template, .light-blur, .heavy-blur, .soft-contrast, .heavy-contrast, .upload-image, .elements, .unlimited-print-image, .new-design, .saved-design, .account-setting, .billing-details, .line, .unlimited-download, .shape, .add-text, .unlimited-email-image, .comma-left, .comma-right, .upload-images, .save-test, .share-small, .triple-line-bar-left, .triple-line-bar-right, .download-small 
+{display:inline-block; overflow:hidden; background-repeat: no-repeat;
+background-image:url(sprite.png);}
+
+.email {width:58px; height:118px; background-position:0.440529% 1.44928%; background-size:882.759%; }
+.fb {width:58px; height:118px; background-position:13.6564% 1.44928%; background-size:882.759%; }
+.twt {width:58px; height:118px; background-position:26.8722% 1.44928%; background-size:882.759%; }
+.linkedin {width:58px; height:118px; background-position:40.0881% 1.44928%; background-size:882.759%; }
+.instagram {width:58px; height:118px; background-position:53.3040% 1.44928%; background-size:882.759%; }
+.pinterest {width:58px; height:118px; background-position:66.5198% 1.44928%; background-size:882.759%; }
+.print {width:58px; height:118px; background-position:79.7357% 1.44928%; background-size:882.759%; }
+.secure-payments {width:95px; height:79px; background-position:0.479616% 68.9266%; background-size:538.947%; }
+.dn-arrow-oval {width:88px; height:51px; background-position:99.5283% 0.975610%; background-size:581.818%; }
+.bg-color {width:54px; height:49px; background-position:92.1397% 26.5700%; background-size:948.148%; }
+.download {width:48px; height:45px; background-position:21.3362% 57.8199%; background-size:1066.67%; }
+.print-green {width:44px; height:44px; background-position:31.8376% 57.5472%; background-size:1163.64%; }
+.repositor {width:44px; height:44px; background-position:41.6667% 57.5472%; background-size:1163.64%; }
+.artwork {width:54px; height:43px; background-position:52.6201% 57.2770%; background-size:948.148%; }
+.share {width:43px; height:43px; background-position:63.3262% 57.2770%; background-size:1190.70%; }
+.choose-plan-left {width:33px; height:43px; background-position:71.3987% 57.2770%; background-size:1551.52%; }
+.choose-plan-right {width:33px; height:43px; background-position:78.7056% 57.2770%; background-size:1551.52%; }
+.filters-icon {width:44px; height:42px; background-position:88.0342% 57.0093%; background-size:1163.64%; }
+.template {width:50px; height:41px; background-position:99.1342% 56.7442%; background-size:1024.00%; }
+.light-blur {width:40px; height:40px; background-position:0.423729% 93.9815%; background-size:1280.00%; }
+.heavy-blur {width:40px; height:40px; background-position:9.32203% 93.9815%; background-size:1280.00%; }
+.soft-contrast {width:40px; height:40px; background-position:18.2203% 93.9815%; background-size:1280.00%; }
+.heavy-contrast {width:40px; height:40px; background-position:27.1186% 93.9815%; background-size:1280.00%; }
+.upload-image {width:40px; height:39px; background-position:36.0169% 93.5484%; background-size:1280.00%; }
+.elements {width:39px; height:36px; background-position:44.8203% 92.2727%; background-size:1312.82%; }
+.unlimited-print-image {width:33px; height:33px; background-position:52.8184% 91.0314%; background-size:1551.52%; }
+.new-design {width:30px; height:30px; background-position:99.1701% 24.3363%; background-size:1706.67%; }
+.saved-design {width:30px; height:30px; background-position:20.5394% 74.7788%; background-size:1706.67%; }
+.account-setting {width:30px; height:30px; background-position:27.1784% 74.7788%; background-size:1706.67%; }
+.billing-details {width:30px; height:30px; background-position:33.8174% 74.7788%; background-size:1706.67%; }
+.line {width:45px; height:29px; background-position:41.7559% 74.4493%; background-size:1137.78%; }
+.unlimited-download {width:29px; height:28px; background-position:50.1035% 74.1228%; background-size:1765.52%; }
+.shape {width:28px; height:27px; background-position:56.4050% 73.7991%; background-size:1828.57%; }
+.add-text {width:26px; height:26px; background-position:62.3457% 73.4783%; background-size:1969.23%; }
+.unlimited-email-image {width:25px; height:26px; background-position:67.9671% 73.4783%; background-size:2048.00%; }
+.comma-left {width:26px; height:21px; background-position:73.6626% 71.9149%; background-size:1969.23%; }
+.comma-right {width:25px; height:21px; background-position:79.2608% 71.9149%; background-size:2048.00%; }
+.upload-images {width:19px; height:19px; background-position:83.7728% 71.3080%; background-size:2694.74%; }
+.save-test {width:20px; height:18px; background-position:88.2114% 71.0084%; background-size:2560.00%; }
+.share-small {width:15px; height:16px; background-position:96.1771% 36.2500%; background-size:3413.33%; }
+.triple-line-bar-left {width:34px; height:15px; background-position:95.3975% 70.1245%; background-size:1505.88%; }
+.triple-line-bar-right {width:34px; height:15px; background-position:60.2510% 84.2324%; background-size:1505.88%; }
+.download-small {width:13px; height:13px; background-position:99.1984% 35.8025%; background-size:3938.46%; }

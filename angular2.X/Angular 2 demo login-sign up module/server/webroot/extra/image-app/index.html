@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Login Page | Image App</title>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+<!--========= CSS Included =========-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/login.css" rel="stylesheet" type="text/css" media="screen">
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="login-container">
+  <nav class="navbar navbar-fixed-top navbar-image-app"> 
+    <!--========= Toggle for Mobile Display =========-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="mobile-logo"></a> </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-image-app">
+        <li><a href="#">About</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact Us </a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container logo-box">
+    <p><a href="#"><img src="images/logo.png" class="img-responsive center-block"></a></p>
+  </div>
+  <div class="container login-heading">
+    <h1>Increase your social media engagement</h1>
+    <h3>With Image app, you can create beautiful images easily to make your posts pop</h3>
+  </div>
+  <!--========= Login Input =========-->
+  <div class="container">
+    <div class="login-box-inn">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12 login-left">
+          <div class="login-left-inn">
+            <h2>login</h2>
+            <p>Join over 1000 peoples designing on image app</p>
+            <form role="form" action="#" class="login-form">
+              <fieldset>
+                <div class="form-group">
+                  <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input class="form-control" placeholder="username" name="loginname" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-box-only"> <span class="input-group-addon"> <i class="fa fa-lock" aria-hidden="true"></i> </span>
+                    <input class="form-control" placeholder="password" name="password" type="password" value="">
+                  </div>
+                </div>
+                <div class="form-group remember-forget">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="checkbox">
+                        <label class="control control--checkbox">
+                        Remember Me
+                        <input type="checkbox">
+                        <div class="control__indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <p>Forgot Password</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group"> <a class="btn btn-block login-btn" href="#">Login</a> </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 login-right">
+          <div class="login-right-inn">
+            <h2>Use other account</h2>
+            <p>you can also sign in using your facebook account or twitter account</p>
+            <div class="social-box"> <a href="#" class="to-facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Sign Up Facebook</a> <a href="#" class="to-twitter"><i class="fa fa-twitter" aria-hidden="true"></i>Sign Up Twitter</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="shadow-container"><img src="images/shadow-bottom.png" alt=""></div>
+    </div>
+    <div class="signup-box"><a href="signup.html" class="btn btn-signup">sign up <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+    <div class="copyright-box">
+      <h4>copyright @ image app .All Right Reserved.</h4>
+    </div>
+  </div>
+</div>
+
+<!--========= jQuery Included =========--> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

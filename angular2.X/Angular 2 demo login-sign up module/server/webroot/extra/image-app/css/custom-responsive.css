@@ -1,0 +1,579 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width: 1290px) {
+/*////template-area/////////////////*/
+ .template li{ margin:0 0 35px 30px;}
+/*////temolate-area/////////////////*/
+
+/*//////////////////Account-Setting/////*/
+.account-form2{
+	padding:4% 3% 3%;
+}
+.account-information2{
+	position:relative;
+}
+.account-information2 .noplan a{
+	position:absolute;
+	right:0;
+	bottom:34px;
+	padding:8px 10px;
+}
+.account-information2 .noplan h3{
+	padding:8px 0;
+}
+.account-information2 .noplan1 a{
+	bottom:135px;
+}
+}
+@media (max-width:1280px) {
+/*////template-area/////////////////*/
+.template li{ margin:0 0 35px 1%;}
+/*////template-area/////////////////*/
+}
+
+@media (max-width:1199px) {
+/*////leftmenu/////////////////*/
+.left-menu li a{
+	font-size:17px;
+}
+/*////leftmenu/////////////////*/
+
+/*////contact-lft/////////////////*/
+.contact-lft h3{ font-size:18px;}
+/*////contact-lft/////////////////*/
+/*////contact-right/////////////////*/
+.right-part h2{ font-size:18px;}
+/*////contact-right/////////////////*/
+
+/*//////////////about-listing/////////*/
+.about-list ul li{
+	padding:0 20px;
+}
+
+/*//////////////pricing/////////*/
+.banner-caption-price{
+	bottom:10%;
+}
+
+/*//////////////////Account-Setting - purchase plan/////*/
+.account-form-area .form-area{
+	width:56%;
+}
+.user-thm{
+	width:83px;
+	height:83px;
+}
+.activity ul li span{
+	width:30px;
+	height:30px;
+	background-size:100%!important;
+}
+.account-form-area a{
+	padding:8px 10px;
+}
+.user-top span{
+	width:100%;
+	padding-top:7px;
+	overflow:hidden;
+}
+.activity ul li label{
+	font-size:12px;
+}
+.account-form-area .form-area{
+	width:53%;
+}
+
+/*//////////////add text/////////*/
+
+.button-area button{
+	width:30px;
+	height:30px;
+	font-size:15px;
+}
+
+}
+@media (max-width:991px) {
+/*////leftmenu/////////////////*/
+.nav-image-app li a{
+	padding:6px 9px;
+}
+/*////template-area/////////////////*/
+.template{ text-align:center;}
+.template li{ width:32%;}
+/*////template-area/////////////////*/
+.main h1{ padding-left:10px;}
+/*////contact-right/////////////////*/
+.right-area{ min-height:830px;}
+/*////contact-right/////////////////*/
+
+/*//////////////banner-area/////////*/
+.banner-caption{
+	bottom:10%;
+}
+.banner-caption{
+	width:100%;
+}
+/*//////////////about-section/////////*/
+.about-left h2{
+	font-size:34px;
+	padding-bottom:18px;
+}
+.about-list ul li img{
+	height:100px;
+}
+.about-area{
+	padding:45px 0;
+}
+/*//////////////testimonial/////////*/
+.testimonials{
+	margin-top:60px;
+}
+.testimonial-list li img{
+	height:100%;
+	width:100%
+}
+.testimonials{
+	padding:30px 0 40px 0;
+}
+.testimonial-list{
+	margin-top:30px;
+}
+.testimonial-list li{
+	padding:0 30px;
+	vertical-align:top;
+}
+.testimonials h2{
+	font-size:34px;
+}
+
+/*//////////////pricing/////////*/
+.banner-caption h2.oval2{
+	font-size:50px;
+}
+.banner-caption ul.pricing-cap{
+	margin-top:-40px;
+}
+.banner-caption ul.pricing-cap li{
+	font-size:27px;
+}
+.pricing-area{
+	margin:50px auto 40px;
+}
+
+/*//////////////////Account-Setting - purchase plan/////*/
+.account-form-area label{
+	display:block;
+	width:auto;
+}
+.noplan a{
+	padding:8px 10px;
+}
+.activity ul li{
+	width:45%;
+	margin-bottom:15px;
+}
+}
+@media (max-width:767px) {
+/*////mobile-menu/////////////////*/
+.side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              right:200px;
+          }
+          .side-collapse {
+              top:0;
+              bottom:0;
+              right:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+			  background:#000;
+			  z-index:999;
+          }
+          .side-collapse.in {
+              width:0;
+}
+.navbar-header{
+	float:left;
+	margin-top:15px;
+}
+.navbar-image-app .navbar-inverse{
+	background:rgb(61, 133, 154);
+}
+
+.navbar-image-app .navbar-toggle .icon-bar{
+	height:4px;
+	width:27px;
+	background-color:#388e3c;
+	border-radius:4px;
+	
+}
+.navbar-image-app .navbar-toggle{
+	border:none;
+	padding:0;
+	margin:0;
+}
+.navbar-image-app .accounts ul{
+	margin:0; 
+	padding:0;
+}
+.navbar-image-app ul{
+	display:block;
+}
+.navbar-image-app .navbar-collapse{
+	padding:0;
+}
+.navbar-default .nav-image-app li a{
+	border:none;
+	text-align:left;
+	color:#fff;
+}
+.nav-image-app li{
+	border-bottom:1px solid #fff;
+}
+.navbar-image-app .container-fluid{
+	padding:0 15px;
+}
+/*////mobile-menu/////////////////*/
+
+/*////top-account-button/////////////////*/
+.accounts{ 
+float:right;
+margin-top:10px;
+}
+.accounts ul li{ 
+font-size:18px; 
+text-transform:uppercase;
+background:#84bb79;
+padding:5px 10px;
+list-style-type:none;
+border-radius:5px;
+}
+.accounts ul li a{ 
+color:#fff;
+}
+/*////top-account-button/////////////////*/
+.logo{
+	text-align:center;
+	margin-bottom:20px;
+}
+/*////top-social-area/////////////////*/
+.social-area label{
+	font-size:12px;
+}
+.social-area ul li a{
+	width:40px;
+	height:40px;
+	
+}
+/*////top-social-area/////////////////*/
+.header-area{
+	position:relative;
+}
+/*////sidebar-area/////////////////*/
+.sidebar{
+	position:relative;
+	top:0;
+}
+.sidebar.col-md-2{
+	width:100%;
+}
+.left-menu li{
+	display:inline-block;
+	margin-top:0;
+	width:24%;
+	padding:10px 0;
+	border-left:1px solid #bcbcbc;
+	vertical-align:top;
+	
+}
+.left-menu li a{
+	font-size:12px;
+}
+.left-menu li:first-child{
+	border:none;
+}
+
+.left-menu{
+	background:#ebebeb;
+	box-shadow:-2px 4px 9px #d1d1d1;
+}
+.left-menu li.active:after, .left-menu li:hover:after{
+	background:none;
+}
+.left-menu li.active, .left-menu li:hover{
+	background:#fff;
+}
+/*////sidebar-area/////////////////*/
+/*////main-container/////////////////*/
+.main-container .container-fluid{
+	padding:0;
+}
+.main-container .col-md-10{
+	width:100%;
+}
+.main-container .col-md-offset-2{
+	margin-left:0;
+}
+.main{
+	padding:0 10px;
+	margin-top:30px;
+}
+
+/*////main-container/////////////////*/
+
+/*////copy-right/////////////////*/
+.copy-right{
+	position:relative;
+}
+.copy-right{
+	overflow:hidden;
+}
+
+.copy-right{
+	padding:18px 0;
+	text-align:center;
+}
+/*////copy-right/////////////////*/
+
+/*////checkout-left/////////////////*/
+.check-left{
+	padding-right:0;
+}
+.check-left{
+	padding:35px 0 0 0;
+}
+/*////checkout-left/////////////////*/
+
+/*////checkout-right/////////////////*/
+.right-area{
+	padding-left:15px;
+	border:none;
+}
+.right-part{
+	margin-top:20px;
+	padding-top:20px;
+	border-top:1px solid #e9e9e9;
+}
+.right-area:after{
+	background:none;
+}
+/*////checkout-right/////////////////*/
+/*////contact-right/////////////////*/
+.right-area{ min-height:inherit;}
+/*////contact-right/////////////////*/
+
+/*//////////////banner-area/////////*/
+.banner-caption ul li span{
+	font-size:14px;
+}
+.banner-caption h2{
+	font-size:36px;
+	margin-bottom:7px;
+}
+
+/*//////////////about-section/////////*/
+
+.about-list ul li img{
+	width:100%;
+	height:100%;
+}
+.about-list ul li{
+	padding:0 5px;
+	vertical-align:top;
+}
+.about-right h4{
+	padding-top:20px;
+}
+.about-left h2{
+	font-size:25px;
+}
+}
+
+@media (max-width:639px) {
+/*//////////////banner-area/////////*/
+.banner-caption ul li{
+	margin:0 25px;
+	font-size:20px;
+}
+.banner-caption ul li span{
+	font-size:10px;
+}
+.banner-caption h2{
+	font-size:25px;
+}
+/*//////////////about-section/////////*/
+.about-list ul li label{
+	font-size:12px;
+}
+.about-list ul li span{
+	font-size:14px;
+}
+
+/*//////////////testimonial/////////*/
+.testimonial-list li{
+	width:32%;
+}
+.testimonials h2{
+	font-size:25px;
+}
+.testimonial-list li span{
+	font-size:15px;
+}
+
+/*//////////////pricing/////////*/
+.banner-caption h3{
+	font-size:20px;
+}
+.banner-caption h2.oval2{
+	font-size:35px;
+}
+.banner-caption ul.pricing-cap{
+	margin-top:-10px;
+}
+
+.pricing-area{
+	width:94%;
+	margin:30px auto 10px;
+}
+.pricing-top h2{
+	font-size:27px;
+}
+.pricing-inner{
+	margin-top:20px;
+	
+}
+.green-area{
+	font-size:22px;
+	padding:20px 0;
+}
+.green-area span{
+	font-size:35px;
+}
+
+/*//////////////////Account-Setting - purchase plan/////*/
+.account-lft, .account-rgt{
+	display:block;
+	width:100%;
+	padding-left:0;
+}
+.account-rgt{
+	border:1px solid rgb(137, 137, 137);
+	padding:3% 3% 2%;
+	margin-top:20px;
+}
+.activity ul li{
+	width:100%;
+	margin-right:0;
+}
+.activity ul li span{
+	width:50px;
+	height:50px;
+}
+
+/*//////////////add text/////////*/
+
+.right-container{
+	margin-top:35px;
+}
+
+}
+
+@media (max-width:480px) {
+/*////top-social-area/////////////////*/
+.social-area ul li a{
+	width:25px;
+	height:25px;
+	
+}
+.social-area ul li{
+	margin:0;
+}
+/*////top-social-area/////////////////*/
+/*////sidebar-area/////////////////*/
+.left-menu li{
+	min-height:103px;
+}
+/*////sidebar-area/////////////////*/
+.main h1{
+	padding-bottom:20px;
+}
+/*////top-search-area/////////////////*/
+.search-area{
+	width:100%;
+	margin-bottom:20px;
+}
+/*////template-area/////////////////*/
+.template li{ 
+	width:48%;
+}
+/*////form-area/////////////////*/
+.form-box{ 
+	padding:20px;
+}
+/*////form-area/////////////////*/
+}
+
+@media (max-width:479px) {
+/*////template-area/////////////////*/
+.template li{ width:80%;}
+.banner-area img{
+	height:170px;
+}
+/*//////////////about-listing/////////*/
+.about-list ul li{
+	width:49%;
+}
+
+/*//////////////testimonials/////////*/
+.testimonial-list li{
+	width:80%;
+	margin-bottom:15px;
+}
+.testimonial-list li img{
+	border-radius:100%;
+}
+}
+
+
+/*============================== Dashboard-Editor CSS Start ==============================*/
+@media (min-width: 1200px) {
+.reposition-elements {
+	position: absolute;
+	right: -120px;
+	top: 0;
+	width: auto;
+	line-height: 36px;
+}
+}
+ @media (max-width:1199px) {
+.reposition-elements {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: -50px;
+	width: auto;
+	line-height: 36px;
+	display: table;
+	max-width: 100px;
+}
+}
+@media (max-width:767px) {
+.btn-row {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.btn-row ul li {
+	margin-bottom: 40px;
+}
+}
+@media (max-width:479px) {
+}
+/*============================== Dashboard-Editor CSS End ==============================*/

@@ -1,0 +1,11 @@
+.table_head_anchor{
+	background: #888888 !important;
+}
+.table_head_anchor > th{
+	color: #fff;
+}
+.table_head_anchor > th >a{
+	color: #fff;
+	background: url(../files/both-w-arrow.png) no-repeat right center;
+	padding-right: 20px;
+}
