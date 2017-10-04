@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Map Multiple Marker</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=initialize&key=AIzaSyCywB5dTeM12SJIJ-Gkq8zczzFHEoZlVRw" async defer></script>
+
+	<style type="text/css">
+  #map {
+    width: 550px;
+    height: 350px !important;
+    text-align: center;
+    border:3px dashed #000;
+  }
+  #map2 {
+    height: 50%;
+    width:750px;
+  }
+  .gm-style .gm-style-iw {
+     font-size: 12px;
+     font-weight: bold;
+     color: #000;
+     padding: 5px 10px;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     /*background-color: #ccc;*/
+  }
+  .info_content p {
+    color:#0000FF;
+    font-weight: normal !important;
+  }
+</style>
+</head>
+
+
+<body>
+		<div id="map"></div>
+
+		<table class="table">
+			<thead>
+		      <tr>
+		        <th>Place Name</th>
+		        <th>Address</th>
+		        <th>Show on map</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>Ziff Davis Media</td>
+		        <td>28 E 28th St, New York, NY</td>
+		        <td><a href="javascript:void(0);" class="map-bus" data-marker-id="0">Show on Map</a></td>
+		      </tr>
+		      <tr>
+		        <td>Credit Suisse</td>
+		        <td>315 Park Ave S, New York, NY</td>
+		        <td><a href="javascript:void(0);" class="map-bus" data-marker-id="1">Show on Map</a></td>
+		      </tr>
+		      <tr>
+		        <td>The New York Times Company</td>
+		        <td>620 Eighth Avenue New York, NY</td>
+		        <td><a href="javascript:void(0);" class="map-bus" data-marker-id="2">Show on Map</a></td>
+		      </tr>
+		      <tr>
+		        <td>McGraw-Hill</td>
+		        <td>1221 Avenue of the Americas, New York, NY</td>
+		        <td><a href="javascript:void(0);" class="map-bus" data-marker-id="3">Show on Map</a></td>
+		      </tr>
+		      <tr>
+		        <td>New York Life</td>
+		        <td>420 Lexington Ave, New York, NY</td>
+		        <td><a href="javascript:void(0);" class="map-bus" data-marker-id="4">Show on Map</a></td>
+		      </tr>
+		      <tr>
+		        <td>Met Life</td>
+		        <td>200 Park Ave, New York, NY</td>
+		        <td><a href="javascript:void(0);" class="map-bus" data-marker-id="5">Show on Map</a></td>
+		      </tr>
+		      <tr>
+		        <td>Bank of America</td>
+		        <td>988 3rd Ave, New York, NY</td>
+		        <td><a href="javascript:void(0);" class="map-bus" data-marker-id="6">Show on Map</a></td>
+		      </tr>
+		    </tbody>
+		</table>
+
+
+<script type="text/javascript">      
+  var resp_dir = new Array();
+  var map; var markers = [];
+  var markers = [];
+  var infoWindowContent = [];
+  var resp_dir_data = ''; var temp_map_data = [];
+  var markerDestArray = []; var infoWindowContent = [];
+  var infoWindow = ''; var marker; var bounds = '';
+  var i;
+
+  function initialize() {
+    var myLat = 40.7444764;
+    var myLng = -73.9890713;
+    var site_name = 'Test Site';
+    var site_addr = '1155 Broadway New York New York 10001';
+    bounds = new google.maps.LatLngBounds();
+    var bwp = new google.maps.LatLng(myLat, myLng);
+    
+    console.log(site_addr);
+
+    var mapOptions = {
+        mapTypeId: 'roadmap',
+        zoom     : 8,
+        center   : bwp
+    };
+    
+    // Display a map on the page
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    map.markers = [];
+    //map.setTilt(45);
+
+    // Route direction coding
+    var directionsService = new google.maps.DirectionsService;
+     // Create a renderer for directions and bind it to the map.
+    var rendererOptions = {
+      map: map
+    }
+    var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+    var stepDisplay       = new google.maps.InfoWindow;
+    //calculateAndDisplayRoute(
+    //directionsDisplay, directionsService, markerArray, stepDisplay, map);
+
+    // Route direction coding
+    
+    // Custom Icon for main address
+    var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+
+    var beachMarker = new google.maps.Marker({
+      position: {lat: myLat, lng: myLng},
+      map: map,
+      zoom     : 11,
+      icon: image
+    });
+    var position5 = new google.maps.LatLng(myLat, myLng);
+    var infoWindow5 = new google.maps.InfoWindow();
+    bounds.extend(position5);
+
+    google.maps.event.addListener(beachMarker, 'click', (function(marker, i) {
+        return function() {
+            var sdata = '<div class="info_content">' + '<h3>'+site_name+'</h3>' + '<p>'+site_addr+'</p>' + '</div>';
+            infoWindow5.setContent( sdata );
+            infoWindow5.open(map, beachMarker);
+        }
+    })(beachMarker));
+
+    // Custom Icon for main address 
+    
+    markers = [
+        ['28 E 28th St, New York, NY', 'Ziff Davis Media', 40.743461,-73.985356],
+        ['315 Park Ave S, New York, NY', 'Credit Suisse', 40.740523,-73.985628],
+        ['620 Eighth Avenue New York, NY', 'The New York Times Company', 40.756087,-73.990112],
+        ['1221 Avenue of the Americas, New York, NY', 'McGraw-Hill', 40.759410,-73.982220],
+        ['420 Lexington Ave, New York, NY', 'New York Life', 40.752684,-73.975902],
+        ['200 Park Ave, New York, NY', 'Met Life', 40.753522,-73.976630],
+        ['988 3rd Ave, New York, NY', 'Bank of America', 40.761568,-73.966618]
+    ];
+
+    console.log(markers);
+
+    var p=1; var t=0;
+    var address = ''; 
+    var locname = '';
+    $.each(markers, function(k, val){
+    for(var m=0; m < val.length; m++){
+      address = val[p];
+      locname = val[t];
+      break;
+    }
+      //strMInfo  =   '<div class="info_content"><h3>'+locname+'</h3><p>'+address+'</p></div>';
+      strMInfo = [ locname + "<br/>" + address ];
+
+      infoWindowContent.push(strMInfo);
+    });
+
+    console.log(markers.length);
+
+    // Display multiple markers on a map
+
+    //infoWindow = new google.maps.InfoWindow(), marker, i;
+    infoWindow = new google.maps.InfoWindow();
+    
+    // Loop through our array of markers & place each one on the map  
+    for( i = 0; i < markers.length; i++ ) {
+        var position = new google.maps.LatLng(markers[i][2], markers[i][3]);
+        bounds.extend(position);
+        
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            zoom: 13,
+            title: markers[i][0]
+        });
+
+        map.markers.push( marker );
+        
+        // Allow each marker to have an info window    
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, i));
+
+        //Register event for open marker
+
+        // Automatically center the map fitting all markers on the screen
+        map.fitBounds(bounds);
+    }
+
+    console.log("=========  FINAL LIST MARKER ==============");
+    console.log(map.markers);
+
+    // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+    //this.setZoom(19);
+        google.maps.event.removeListener(boundsListener);
+    });
+}
+
+$(function(){
+  $('.map-bus').click(function(e){
+      console.log('marking...');
+
+    var mkid = $(this).attr('data-marker-id');
+    var marker5 = markers[mkid][0];
+
+      var myLat = 40.7444764;
+    var myLng = -73.9890713;
+      var bwp = new google.maps.LatLng(myLat, myLng);
+
+      var mapOptions = {
+        mapTypeId: 'roadmap',
+        zoom     : 11,
+        center   : bwp
+      };
+      var marker = new google.maps.Marker({
+        position:  new google.maps.LatLng(markers[mkid][2], markers[mkid][3]),
+        map: map
+      });
+
+      var html = infoWindowContent[mkid][0]; //markers[mkid][0] + "<br>" + markers[mkid][1];
+
+      google.maps.event.addListener(marker, 'click', function() {
+          infoWindow.setContent(html);
+          infoWindow.open(map, marker);
+      });
+      google.maps.event.trigger(marker,'click');
+
+      $('html, body').animate({
+            scrollTop: $("#map").offset().top
+        }, 3300);
+  });
+
+});
+</script>              
+
+</body>
+</html>
